@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css?v=4" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <title>Admin login</title>
+  </head>
+  <body>
+    <header class="header-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-6">
+            <a href="index.html">
+              <img src="images/header-logo.png" />
+            </a>
+          </div>
+          <div class="col-md-9 col-6 header-toggle-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse header-nav"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="search-deliveries.html"
+                      >Search Deliveries</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="how-it-works.html"
+                      >How It Works</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="login.html">Log in</a>
+                  </li>
+                  <li class="nav-item btn transport-btn">
+                    <a class="nav-link" href="sign-up.html"
+                      >Are you a Transport Company?</a
+                    >
+                  </li>
+                  <li class="nav-item btn btn-secondary">
+                    <a class="nav-link" href="#">Get Quotes</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      class="transpoart-company-bg"
+      style="background-image: url(images/admin-bg.jpg)"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-8">
+            <div class="login-box">
+              <div class="login-heading">
+                <h2>ADMIN login</h2>
+              </div>
+              <div class="login-form">
+                <form action="/admin" method="POST">
+                  <div class="form_group">
+                    <div class="formitem">
+                      <label>Enter Your Email</label>
+                      <input
+                        type="text"
+                        name="email"
+                        class="form-control log_control"
+                        placeholder="Enter your email ID"
+                      />
+                    </div>
+                    <div class="formitem">
+                      <label>Password</label>
+                      <input
+                        type="password"
+                        name="password"
+                        class="form-control log_control"
+                        placeholder="Password"
+                      />
+                    </div>
+                  </div>
+                  <div class="log_btn">
+                    <div class="log_b btn-secondary">
+                      <a class="btn_sub"
+                        ><input
+                          type="submit"
+                          value="Submit"
+                          style="
+                            background-color: #b81226;
+                            border: none;
+                            color: #fff;
+                          "
+                      /></a>
+                    </div>
+                  </div>
+                  <div class="remember-area">
+                    <a href="javascript:void(0);">Forgot Password?</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <h5>CONTACTS US</h5>
+            <div class="footer-company-details">
+              <ul>
+                <li>
+                  <div class="contact-info-inner">
+                    <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                  </div>
+                  <p>Zhongxing Road,kenli Distrect, Dongying,shandong</p>
+                </li>
+                <li>
+                  <div class="contact-info-inner">
+                    <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                  </div>
+                  <p>999-999-999</p>
+                </li>
+                <li>
+                  <div class="contact-info-inner">
+                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                  </div>
+                  <p>example@gamil.com</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="col-lg-2 col-md-6">
+                    <h5>QUICK LINKS</h5>
+                    <ul class="footer-list-style">
+                        <li><a href="javascript:void(0);">Search Deliveries</a></li>
+                        <li><a href="javascript:void(0);">How It Works</a></li>
+                        <li><a href="javascript:void(0);">Help</a></li>
+                        <li><a href="javascript:void(0);">Log in</a></li>
+                    </ul>
+                </div> -->
+          <div class="col-lg-5 col-md-6">
+            <h5>OUR SERVICES</h5>
+            <ul class="footer-list-style">
+              <li><a href="javascript:void(0);">Furniture Delivery</a></li>
+              <li><a href="javascript:void(0);">eBay Couriers</a></li>
+              <li><a href="javascript:void(0);">Man And Van</a></li>
+              <li><a href="javascript:void(0);">Boat Transport</a></li>
+              <li><a href="javascript:void(0);">Motorcycle Transport</a></li>
+              <li><a href="javascript:void(0);">Courier Services</a></li>
+              <li><a href="javascript:void(0);">Man With a Ven</a></li>
+              <li><a href="javascript:void(0);">Pet Transport</a></li>
+              <li><a href="javascript:void(0);">Car Transport</a></li>
+              <li><a href="javascript:void(0);">Removal Companies</a></li>
+              <li><a href="javascript:void(0);">Large Item Delivery</a></li>
+              <li><a href="javascript:void(0);">International Shipping</a></li>
+              <li><a href="javascript:void(0);">Haulage</a></li>
+              <li><a href="javascript:void(0);">Removals</a></li>
+              <li><a href="javascript:void(0);">Fragile Goods Transport</a></li>
+              <li><a href="javascript:void(0);">European Transport</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <!-- <div class="our-location-box">
+                        <h5>NEWSLETTER SUBSCRIBE</h5>
+                        <p>Vivamus consequat, felis at aliquam elementum, massa sem dignissim elit, sit amet cursus massa tortor eget ante.</p>
+                        <form>
+                            <input type="email" name="" placeholder="Enter your email here...">
+                        </form>
+                    </div> -->
+            <h5>QUICK LiNKS</h5>
+            <ul class="footer-list-style footer-list-style2">
+              <li>
+                <a href="search-deliveries.html">Search Deliveries</a>
+              </li>
+              <li>
+                <a href="how-it-works.html">How It Works</a>
+              </li>
+              <li>
+                <a href="help.html">Help</a>
+              </li>
+              <li>
+                <a href="login.html">Log in</a>
+              </li>
+            </ul>
+            <div class="ebay-logo footer-ebay-logo">
+              <img src="images/ebay-guide1.png" />
+              <p>compatible</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer-sec2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p>Copyright © 2021 All Rights Reserved.</p>
+            <ul class="footer-social-icon">
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0);">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

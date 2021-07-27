@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transport</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css?v=3">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+</head>
+<body>
+
+<header class="header-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-6 col-6 dashboard-menu">
+				<a href="index.html">
+					<img src="images/header-logo.png">
+				</a>
+				<ul class="navbar-nav logo-wrap-menu">
+					<li class="nav-item">
+						<a href="javascript:void(0);">Get Quotes</a>
+					</li>
+					<li class="nav-item">
+						<a href="search-deliveries.html">Search Deliveries</a>
+					</li>
+					<li class="nav-item">
+						<a href="how-it-works.html">How It Works</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-6 header-toggle-menu">
+				<nav class="navbar navbar-expand-lg navbar-light">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse header-nav" id="navbarSupportedContent">
+				    <ul class="navbar-nav dashboard-mobile-menu">
+				    	<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0);">Get Quotes</a>
+						</li>
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">Search Deliveries</a>
+				      </li>
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">How It Works</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Help</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="messages.html"><i class="fas fa-envelope"></i></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="outbid-Auctions.html"><i class="fas fa-gavel"></i></a>
+				      </li>
+				       <li class="nav-item btn btn-secondary">
+				        <a class="nav-link" href="vendor-dashboard.html"><i class="fas fa-tachometer-alt"></i> My Activity</a>
+				      </li>
+				    </ul>
+				    <ul class="navbar-nav dashboard-dekstop-menu">
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Help</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="messages.html"><i class="fas fa-envelope"></i></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="outbid-Auctions.html"><i class="fas fa-gavel"></i></a>
+				      </li>
+				       <li class="nav-item btn btn-secondary">
+				        <a class="nav-link" href="vendor-dashboard.html"><i class="fas fa-tachometer-alt"></i> My Activity</a>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="dashboard-menu-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="dashboard-top-heading">
+					<p><strong>My Activity:</strong> fastremove 143</p>
+				</div>
+			</div>
+			<div class="col-md-6 dashboard-tab-wrapper">
+				<ul class="nav nav-tabs">
+					<li>
+						<a href="vendor-dashboard.html">
+							<i class="fas fa-exchange-alt"></i>
+							<span class="myActivity-nav-link">My Activity </span>
+						</a>
+					</li>
+					<li class="active">
+						<a href="messages.html">
+							<i class="fa fa-envelope"></i>
+							<span class="myActivity-nav-link">Messages  </span>
+							<!-- <div class="msg-counter-number">1</div> -->
+						</a>
+					</li>
+					<li>
+						<a href="account.html">
+							<i class="fa fa-user"></i>
+							<span class="myActivity-nav-link">Account</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="right-side-column">
+					<div class="right-top-heading">
+						<h3>Messages</h3>
+					</div>
+					<ul class="left-nav-item-list">
+						<li class="left-nav-item active">
+							<a href="messages" class="left-nav-a left-nav-first">
+								<i class="fas fa-envelope"></i>
+								<span class="ms-left-nav-txt">Inbox</span>
+							</a>
+						</li>
+						<li class="left-nav-item ">
+							<a href="manage-predefined-answers.html" class="left-nav-a left-nav-first">
+								<i class="fas fa-pencil-alt"></i>
+								<span class="ms-left-txt">Manage Predefined Answers</span>
+							</a>
+						</li>
+						<li class="left-nav-item ">
+							<a href="message-delivery-preferences.html" class="left-nav-a left-nav-first">
+								<i class="fas fa-paper-plane"></i>
+								<span class="ms-left-txt">Message Delivery Preferences</span>
+							</a>
+						</li>
+						<li class="left-nav-item ">
+							<a href="index.html" class="left-nav-a left-nav-first">
+								<i class="fas fa-sign-out-alt"></i>
+								<span class="ms-left-txt">Logout</span>
+							</a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="indox-left-side-col-wraper">
+					<div class="inbox-top-heading">
+						<p><span>Results:</span> <span>1 - 25</span> <span>of</span> <span>467</span></p>
+						<nav aria-label="Page navigation" class="count-pagination">
+						  <ul class="pagination">
+						    <li class="page-item">
+						      <a class="page-link" href="#" aria-label="Previous">
+						        <span aria-hidden="true">«</span>
+						        <span class="sr-only">Previous</span>
+						      </a>
+						    </li>
+						    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						    <li class="page-item"><a class="page-link" href="#">4</a></li>
+						    <li class="page-item">
+						      <a class="page-link" href="#" aria-label="Next">
+						        <span aria-hidden="true">»</span>
+						        <span class="sr-only">Next</span>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>
+					</div>
+					<div class="message-box-wrapper">
+						<div class="message-top-head">
+							<div class="dropdown">
+								<button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+									<i class="fas fa-envelope"></i> All Messages <span class="caret1"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
+								</button>
+								<ul class="dropdown-menu">
+									<li>
+										<a href="/us/messages/inbox/1/1/0"> 
+											<img class="unread-icon" src="/img/icon/fa-envelope-unread.png" loading="lazy" width="14" height="13"> Unread Messages
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="table-content-box">
+							<table class="table">
+								<thead>
+									<tr>
+										<th class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox1" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox1" for="checkbox1" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</th>
+										<th>From </th>
+										<th>Subject</th>
+										<th>Received</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox2" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox2" for="checkbox2" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox3" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox3" for="checkbox3" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox4" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox4" for="checkbox4" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox5" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox5" for="checkbox5" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox6" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox6" for="checkbox6" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox7" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox7" for="checkbox7" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox8" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox8" for="checkbox8" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox9" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox9" for="checkbox9" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox10" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox10" for="checkbox10" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+									<tr>
+										<td class="custom-button">
+											<div class="checkbox">
+												<input id="checkbox11" class="input-checkbox checkbox1" type="checkbox" value="select all">
+												<label id="checkbox11" for="checkbox11" class="checkbox-label">
+													<span class="label-checkbox"></span>
+													<span class="label-checkbox-text sr-only">Sofa And Two Single Chairs</span>
+												</label>
+											</div>
+										</td>
+										<td>
+											<a href="javascript:void(0);">
+												<span>sbow32</span>
+												<span>(0)</span>
+											</a>
+										</td>
+										<td><a href="javascript:void(0);">Quote on Display Glass Cabinet</a>  - Hiya new job on Activity?</td>
+										<td>05/24</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<h5>CONTACTS US</h5>
+				<div class="footer-company-details">
+					<ul>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+							</div>
+							<p>Zhongxing Road,kenli Distrect, Dongying,shandong</p></li>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-phone-alt" aria-hidden="true"></i>
+							</div>
+							<p>999-999-999</p></li>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-envelope" aria-hidden="true"></i>
+							</div>
+							<p>example@gamil.com</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- <div class="col-lg-2 col-md-6">
+				<h5>QUICK LINKS</h5>
+				<ul class="footer-list-style">
+					<li><a href="javascript:void(0);">Search Deliveries</a></li>
+					<li><a href="javascript:void(0);">How It Works</a></li>
+					<li><a href="javascript:void(0);">Help</a></li>
+					<li><a href="javascript:void(0);">Log in</a></li>
+				</ul>
+			</div> -->
+			<div class="col-lg-5 col-md-6">
+				<h5>OUR SERVICES</h5>
+				<ul class="footer-list-style">
+					<li><a href="furniture-delivery.html">Furniture Delivery</a></li>
+					<li><a href="javascript:void(0);">eBay Couriers</a></li>
+					<li><a href="man-&-van.html">Man And Van</a></li>
+					<li><a href="javascript:void(0);">Boat Transport</a></li>
+					<li><a href="motorcycle-transport.html">Motorcycle Transport</a></li>
+					<li><a href="courier-services.html">Courier Services</a></li>
+					<li><a href="javascript:void(0);">Pet Transport</a></li>
+					<li><a href="car-transport.html">Car Transport</a></li>
+					<li><a href="removal-companies.html">Removal Companies</a></li>
+					<li><a href="large-Item-delivery.html">Large Item Delivery</a></li>
+					<li><a href="international-shipping.html">International Shipping</a></li>
+					<li><a href="haulage-services.html">Haulage</a></li>
+					<li><a href="javascript:void(0);">Removals</a></li>
+					<li><a href="fragile-goods.html">Fragile Goods Transport</a></li>
+					<li><a href="european-transport.html">European Transport</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<!-- <div class="our-location-box">
+					<h5>NEWSLETTER SUBSCRIBE</h5>
+					<p>Vivamus consequat, felis at aliquam elementum, massa sem dignissim elit, sit amet cursus massa tortor eget ante.</p>
+					<form>
+						<input type="email" name="" placeholder="Enter your email here...">
+					</form>
+				</div> -->
+				<h5>QUICK LiNKS</h5>
+				<ul class="footer-list-style footer-list-style2">
+					<li>
+						<a href="search-deliveries.html">Search Deliveries</a>
+					</li>
+					<li>
+						<a href="how-it-works.html">How It Works</a>
+					</li>
+					<li>
+						<a href="help.html">Help</a>
+					</li>
+					<li>
+						<a href="login.html">Log in</a>
+					</li>
+					<li>
+						<a href="terms-and-condition.html">Terms And Condition</a>
+					</li>
+				</ul>
+				<div class="ebay-logo footer-ebay-logo">
+					<img src="images/ebay-guide1.png">
+					<p>compatible</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<footer class="footer-sec2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<p>Copyright © 2021 All Rights Reserved.</p>
+				<ul class="footer-social-icon">
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+	$(document).ready(function(){
+		$('.input-cheackbox').click(function(){
+          $(this).closest('.input-cheack-area').find('.form-inner').toggle();
+      });
+	});
+</script>
+
+</html>

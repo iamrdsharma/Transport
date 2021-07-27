@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transport</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css?v=3">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+</head>
+<body>
+
+</body>
+<header class="header-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-6">
+				<a href="index.html">
+					<img src="images/header-logo.png">
+				</a>
+			</div>
+			<div class="col-md-9 col-6 header-toggle-menu">
+				<nav class="navbar navbar-expand-lg navbar-light">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse header-nav" id="navbarSupportedContent">
+				    <ul class="navbar-nav">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="search-deliveries.html">Search Deliveries</a>
+				      </li>
+				      <li class="nav-item active">
+				        <a class="nav-link" href="how-it-works.html">How It Works</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="help.html">Help</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="login.html">Log in</a>
+				      </li>
+				      <li class="nav-item btn transport-btn">
+				        <a class="nav-link" href="sign-up.html">Are you a Transport Company?</a>
+				      </li>
+				       <li class="nav-item btn btn-secondary">
+				        <a class="nav-link" href="get-quotes.html">Get Quotes</a>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<!-- <section class="inner-banner-sec bg-style" style="background-image: url(images/banner-inner-bg.jpg);">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>SEARCH DELIVERIES</h1>
+			</div>
+		</div>
+	</div>
+</section> -->
+	
+<section>
+	<div class="container">
+		<div class="row mb-2">
+			<div class="col-md-12">
+				<div class="search-content-box">
+					<ul class="nav nav-tabs">
+					    <li class="active"><a class="active" data-toggle="tab" href="#home"><i class="fas fa-globe-asia"></i>  Country Search</a></li>
+					    <li><a data-toggle="tab" href="#menu2"><i class="fas fa-map-marker-alt"></i> Local Search</a></li>
+					    <li><a data-toggle="tab" href="#menu3"><i class="far fa-compass"></i> Route Search</a></li>
+					</ul>	
+					<div class="tab-content">
+					    <div id="home" class="tab-pane fade in active">
+							<div class="row search-deliveries-row">
+								<div class="col-lg-9 col-md-12">
+									<form class="search-location-form">
+										<div class="form-group">
+											<div class="form-item">
+												<i class="fas fa-map-marker-alt"></i>
+												<input type="text" name="text" class="form-control log_control" placeholder="Origin City/Postcode" autocomplete="off">
+											</div>
+											<div class="form-item">
+												<i class="fas fa-map-marker-alt"></i>
+												<input type="text" name="text" class="form-control log_control" placeholder="Destination City/Postcode" autocomplete="off">
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="col-lg-3 col-md-12 search-tab search-tab-btn">
+									<!-- <div class="form-item">
+										<i class="fas fa-search"></i>
+										<input type="text" name="text" class="form-control log_control" placeholder="Search" autocomplete="off">
+									</div> -->
+									<button type="text"><i class="fas fa-search"></i> Search</button>
+									<a href="javascript:void(0);" class="advanced-search-btn">
+										<span><i class="fas fa-plus-circle"></i> Advanced Search</span>
+										<span class="close-addvanced-search"><i class="fas fa-minus-circle"></i> Close Advanced Search</span>
+									</a>
+								</div>
+								<div class="col-md-12 advanced-search-input">
+									<form>
+										<div class="from-group">
+											<label>Preferred Collection Dates</label>
+											<input type="date" name="date" value="10">	
+										</div>
+										<div class="from-group">
+											<label>Preferred Shipment Dates</label>
+											<input type="date" name="date" value="10">	
+										</div>
+										<div class="from-group">
+											<label></label>
+											<input type="text" name="" placeholder="keyword / item ID">	
+										</div>
+									</form>
+									<ul class="advanced-search-list">
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox1" class="input-checkbox checkbox1" type="checkbox" value="select all">
+													<label id="checkbox1" for="checkbox1" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Furniture & General Items (677)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox2" class="input-checkbox checkbox2" type="checkbox" value="select all">
+													<label id="checkbox2" for="checkbox2" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Boxes (99)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox3" class="input-checkbox checkbox3" type="checkbox" value="select all">
+													<label id="checkbox3" for="checkbox3" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Cars (2,159)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox4" class="input-checkbox checkbox4" type="checkbox" value="select all">
+													<label id="checkbox4" for="checkbox4" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Motorcycles (203)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox5" class="input-checkbox checkbox5" type="checkbox" value="select all">
+													<label id="checkbox5" for="checkbox5" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Other Vehicles (177)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox6" class="input-checkbox checkbox6" type="checkbox" value="select all">
+													<label id="checkbox6" for="checkbox6" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Vehicle Parts (32)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox7" class="input-checkbox checkbox7" type="checkbox" value="select all">
+													<label id="checkbox" for="checkbox7" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Moving Home (32)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox8" class="input-checkbox checkbox8" type="checkbox" value="select all">
+													<label id="checkbox8" for="checkbox8" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Freight (112)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox9" class="input-checkbox checkbox9" type="checkbox" value="select all">
+													<label id="checkbox9" for="checkbox9" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Boats (31)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox10" class="input-checkbox checkbox10" type="checkbox" value="select all">
+													<label id="checkbox10" for="checkbox10" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Pianos (4)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox11" class="input-checkbox checkbox11" type="checkbox" value="select all">
+													<label id="checkbox11" for="checkbox11" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Pets & Livestock (53)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox12" class="input-checkbox checkbox12" type="checkbox" value="select all">
+													<label id="checkbox12" for="checkbox12" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Other (169)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+					    </div>
+					    <div id="menu2" class="tab-pane fade">
+					    	<div class="row search-deliveries-row">
+								<div class="col-lg-9 col-md-12">
+									<form class="search-location-form search-local-tab">
+										<div class="form-group">
+											<div class="form-item">
+												<i class="fas fa-map-marker-alt"></i>
+												<input type="text" name="text" class="form-control log_control" placeholder="City / Postcode" autocomplete="off">
+											</div>
+											<div class="form-item">
+												<select id="local-search-radius" class="form-control listing-action">
+													<option value="1" selected="selected">10 Miles</option>
+													<option value="2">10 Miles</option>
+													<option value="3">20 Miles</option>
+													<option value="4">30 Miles</option>
+													<option value="6">60 Miles</option>
+													<option value="7">80 Miles</option>
+													<option value="8">100 Miles</option>
+													<option value="9">150 Miles</option>
+													<option value="10">200 Miles</option>
+													<option value="11">500 Miles</option>
+												</select>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="col-lg-3 col-md-12 search-tab search-tab-btn">
+									<!-- <div class="form-item">
+										<i class="fas fa-search"></i>
+										<input type="text" name="text" class="form-control log_control" placeholder="Search" autocomplete="off">
+									</div> -->
+									<button type="text"><i class="fas fa-search"></i> Search</button>
+									<a href="javascript:void(0);" class="advanced-search-btn">
+										<span><i class="fas fa-plus-circle"></i> Advanced Search</span>
+										<span class="close-addvanced-search"><i class="fas fa-minus-circle"></i> Close Advanced Search</span>
+									</a>
+								</div>
+								<div class="col-md-12 advanced-search-input">
+									<form>
+										<div class="from-group">
+											<label>Preferred Collection Dates</label>
+											<input type="date" name="date" value="10">	
+										</div>
+										<div class="from-group">
+											<label>Preferred Shipment Dates</label>
+											<input type="date" name="date" value="10">	
+										</div>
+										<div class="from-group">
+											<label></label>
+											<input type="text" name="" placeholder="keyword / item ID">	
+										</div>
+									</form>
+									<ul class="advanced-search-list">
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox13" class="input-checkbox checkbox13" type="checkbox" value="select all">
+													<label id="checkbox13" for="checkbox13" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Furniture & General Items (677)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox14" class="input-checkbox checkbox14" type="checkbox" value="select all">
+													<label id="checkbox14" for="checkbox14" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Boxes (99)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox15" class="input-checkbox checkbox15" type="checkbox" value="select all">
+													<label id="checkbox15" for="checkbox15" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Cars (2,159)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox16" class="input-checkbox checkbox16" type="checkbox" value="select all">
+													<label id="checkbox16" for="checkbox16" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Motorcycles (203)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox17" class="input-checkbox checkbox17" type="checkbox" value="select all">
+													<label id="checkbox17" for="checkbox17" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Other Vehicles (177)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox18" class="input-checkbox checkbox18" type="checkbox" value="select all">
+													<label id="checkbox18" for="checkbox18" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Vehicle Parts (32)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox19" class="input-checkbox checkbox19" type="checkbox" value="select all">
+													<label id="checkbox19" for="checkbox19" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Moving Home (32)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox20" class="input-checkbox checkbox20" type="checkbox" value="select all">
+													<label id="checkbox20" for="checkbox20" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Freight (112)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox21" class="input-checkbox checkbox21" type="checkbox" value="select all">
+													<label id="checkbox21" for="checkbox21" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Boats (31)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox22" class="input-checkbox checkbox22" type="checkbox" value="select all">
+													<label id="checkbox22" for="checkbox22" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Pianos (4)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox23" class="input-checkbox checkbox23" type="checkbox" value="select all">
+													<label id="checkbox23" for="checkbox23" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Pets & Livestock (53)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox24" class="input-checkbox checkbox24" type="checkbox" value="select all">
+													<label id="checkbox24" for="checkbox24" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Other (169)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+					    </div>
+					    <div id="menu3" class="tab-pane fade">
+					    	<div class="row search-deliveries-row">
+								<div class="col-lg-9 col-md-12">
+									<form class="search-location-form">
+										<div class="form-group">
+											<div class="form-item">
+												<i class="fas fa-map-marker-alt"></i>
+												<input type="text" name="text" class="form-control log_control" placeholder="Origin City/Postcode" autocomplete="off">
+											</div>
+											<div class="form-item">
+												<i class="fas fa-map-marker-alt"></i>
+												<input type="text" name="text" class="form-control log_control" placeholder="Destination City/Postcode" autocomplete="off">
+											</div>
+											<div class="form-item select-miles-radius">
+												<select id="local-search-radius" class="form-control listing-action">
+													<option value="1" selected="selected">10 Miles</option>
+													<option value="2">10 Miles</option>
+													<option value="3">20 Miles</option>
+													<option value="4">30 Miles</option>
+													<option value="5">60 Miles</option>
+													<option value="6">80 Miles</option>
+													<option value="7">100 Miles</option>
+													<option value="8">150 Miles</option>
+													<option value="9">200 Miles</option>
+													<option value="10">500 Miles</option>
+												</select>
+											</div>
+											<div class="form-item">
+												<input type="text" name="text" class="form-control log_control" placeholder="Pickup / Delivery" autocomplete="off">
+											</div>
+											<div class="form-item select-all-categories">
+												<input type="text" name="text" class="form-control categories-input" placeholder="All categories selected" autocomplete="off">
+												<i class="fas fa-caret-down"></i>
+												<div class="categories-select">
+													<div class="selected-wrapper">
+														<a href="javascript:void(0);">Select all</a>
+														<a href="javascript:void(0);">Select none</a>
+													</div>
+													<div class="categories inner-area">
+														<input type="checkbox" id="Hourly" name="Hourly" value="1">
+	  													<label for="Hourly"> Hourly Rate</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="furniture" name="furniture" value="2">
+	  													<label for="furniture"> Furniture Delivery</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="home-move" name="home-move" value="3">
+	  													<label for="home-move"> Home Move</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="parcel" name="parcel" value="4">
+	  													<label for="parcel"> Parcel Delivery</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="venicies" name="venicies" value="5">
+	  													<label for="venicies"> Cars/Venicies</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="motorcycle" name="motorcycle" value="6">
+	  													<label for="motorcycle"> Motorcycle Delivery</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="office" name="office" value="7">
+	  													<label for="office"> Office Moves</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="piano" name="piano" value="8">
+	  													<label for="piano"> Piano</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="vehicle" name="vehicle" value="9">
+	  													<label for="vehicle"> Vehicle Parts</label><br>
+  													</div>
+  													<div class="categories inner-area">
+														<input type="checkbox" id="livestock" name="livestock" value="10">
+	  													<label for="livestock"> Livestock</label><br>
+  													</div>
+												</div>
+											</div>
+											<div class="form-item celender-type-btn">
+												<!-- <select id="local-search-radius" class="form-control listing-action">
+													<option value="1" selected="selected">Dates</option>
+													<option value="2">1</option>
+													<option value="3">2</option>
+													<option value="4">3</option>
+													<option value="5">6</option>
+													<option value="6">8</option>
+													<option value="7">10</option>
+													<option value="8">15</option>
+													<option value="9">20</option>
+													<option value="10">50</option>
+												</select> -->
+												<input type="date" name="date" value="10">
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="col-lg-3 col-md-12 search-tab search-tab-btn">
+									<!-- <div class="form-item">
+										<i class="fas fa-search"></i>
+										<input type="text" name="text" class="form-control log_control" placeholder="Search" autocomplete="off">
+									</div> -->
+									<button type="text"><i class="fas fa-search"></i> Search</button>
+									<a href="javascript:void(0);" class="advanced-search-btn">
+										<span><i class="fas fa-plus-circle"></i> Advanced Search</span>
+										<span class="close-addvanced-search"><i class="fas fa-minus-circle"></i> Close Advanced Search</span>
+									</a>
+								</div>
+								<div class="col-md-12 advanced-search-input">
+									<form>
+										<div class="from-group">
+											<label>Preferred Collection Dates</label>
+											<input type="date" name="date" value="10">	
+										</div>
+										<div class="from-group">
+											<label>Preferred Shipment Dates</label>
+											<input type="date" name="date" value="10">	
+										</div>
+										<div class="from-group">
+											<label></label>
+											<input type="text" name="" placeholder="keyword / item ID">	
+										</div>
+									</form>
+									<ul class="advanced-search-list">
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox25" class="input-checkbox checkbox25" type="checkbox" value="select all">
+													<label id="checkbox25" for="checkbox25" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Furniture & General Items (677)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox26" class="input-checkbox checkbox26" type="checkbox" value="select all">
+													<label id="checkbox26" for="checkbox26" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Boxes (99)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox27" class="input-checkbox checkbox27" type="checkbox" value="select all">
+													<label id="checkbox27" for="checkbox27" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Cars (2,159)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox28" class="input-checkbox checkbox28" type="checkbox" value="select all">
+													<label id="checkbox28" for="checkbox28" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Motorcycles (203)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox29" class="input-checkbox checkbox29" type="checkbox" value="select all">
+													<label id="checkbox29" for="checkbox29" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Other Vehicles (177)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox30" class="input-checkbox checkbox30" type="checkbox" value="select all">
+													<label id="checkbox30" for="checkbox30" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Vehicle Parts (32)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox31" class="input-checkbox checkbox31" type="checkbox" value="select all">
+													<label id="checkbox31" for="checkbox31" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Moving Home (32)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox32" class="input-checkbox checkbox32" type="checkbox" value="select all">
+													<label id="checkbox32" for="checkbox32" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Freight (112)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox33" class="input-checkbox checkbox33" type="checkbox" value="select all">
+													<label id="checkbox33" for="checkbox33" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Boats (31)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox34" class="input-checkbox checkbox34" type="checkbox" value="select all">
+													<label id="checkbox10" for="checkbox34" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Pianos (4)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox35" class="input-checkbox checkbox35" type="checkbox" value="select all">
+													<label id="checkbox35" for="checkbox35" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Pets & Livestock (53)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="custom-button">
+												<div class="checkbox">
+													<input id="checkbox36" class="input-checkbox checkbox36" type="checkbox" value="select all">
+													<label id="checkbox36" for="checkbox36" class="checkbox-label">
+														<span class="label-checkbox"></span>
+														<span class="label-checkbox-text">Other (169)</span>
+													</label>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="search-delivery-table">
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th>Item</th>
+								<th>Origin</th>
+								<th>Destination</th>
+								<th>Miles</th>
+								<th>Miles</th>
+								<th>TP's&nbsp;Quoting</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><i class="fas fa-couch"></i></td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery1.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery2.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><i class="fas fa-couch"></i></td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery1.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery2.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><i class="fas fa-couch"></i></td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery1.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery2.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><i class="fas fa-couch"></i></td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery1.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery2.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><i class="fas fa-couch"></i></td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery1.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+							<tr>
+								<td><img src="images/search-delivery2.jpg"> </td>
+								<td>X6 Booth Seats 41” Long Each & Weigh 1...</td>
+								<td>Hayes, Greater London, UB4, United Kingdom</td>
+								<td>Redcar, Redcar And Cleveland, TS10, United Kingdom	</td>
+								<td>261</td>
+								<td>9</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="show-result">
+						<p><span>Results: </span>1 - 50 of 39,547</p>
+					</div>
+				</div>
+				<nav aria-label="Page navigation" class="count-pagination">
+				  <ul class="pagination">
+				    <li class="page-item">
+				      <a class="page-link" href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				        <span class="sr-only">Previous</span>
+				      </a>
+				    </li>
+				    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+				    <li class="page-item"><a class="page-link" href="#">2</a></li>
+				    <li class="page-item"><a class="page-link" href="#">3</a></li>
+				    <li class="page-item"><a class="page-link" href="#">4</a></li>
+				    <li class="page-item"><a class="page-link" href="#">5</a></li>
+				    <li class="page-item"><a class="page-link" href="#">6</a></li>
+				    <li class="page-item">
+				      <a class="page-link" href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				        <span class="sr-only">Next</span>
+				      </a>
+				    </li>
+				  </ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<h5>CONTACTS US</h5>
+				<div class="footer-company-details">
+					<ul>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+							</div>
+							<p>Zhongxing Road,kenli Distrect, Dongying,shandong</p></li>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-phone-alt" aria-hidden="true"></i>
+							</div>
+							<p>999-999-999</p></li>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-envelope" aria-hidden="true"></i>
+							</div>
+							<p>example@gamil.com</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- <div class="col-lg-2 col-md-6">
+				<h5>QUICK LINKS</h5>
+				<ul class="footer-list-style">
+					<li><a href="javascript:void(0);">Search Deliveries</a></li>
+					<li><a href="javascript:void(0);">How It Works</a></li>
+					<li><a href="javascript:void(0);">Help</a></li>
+					<li><a href="javascript:void(0);">Log in</a></li>
+				</ul>
+			</div> -->
+			<div class="col-lg-5 col-md-6">
+				<h5>OUR SERVICES</h5>
+				<ul class="footer-list-style">
+					<li><a href="furniture-delivery.html">Furniture Delivery</a></li>
+					<li><a href="javascript:void(0);">eBay Couriers</a></li>
+					<li><a href="man-&-van.html">Man And Van</a></li>
+					<li><a href="javascript:void(0);">Boat Transport</a></li>
+					<li><a href="motorcycle-transport.html">Motorcycle Transport</a></li>
+					<li><a href="courier-services.html">Courier Services</a></li>
+					<li><a href="javascript:void(0);">Pet Transport</a></li>
+					<li><a href="car-transport.html">Car Transport</a></li>
+					<li><a href="removal-companies.html">Removal Companies</a></li>
+					<li><a href="large-Item-delivery.html">Large Item Delivery</a></li>
+					<li><a href="international-shipping.html">International Shipping</a></li>
+					<li><a href="haulage-services.html">Haulage</a></li>
+					<li><a href="javascript:void(0);">Removals</a></li>
+					<li><a href="fragile-goods.html">Fragile Goods Transport</a></li>
+					<li><a href="european-transport.html">European Transport</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<!-- <div class="our-location-box">
+					<h5>NEWSLETTER SUBSCRIBE</h5>
+					<p>Vivamus consequat, felis at aliquam elementum, massa sem dignissim elit, sit amet cursus massa tortor eget ante.</p>
+					<form>
+						<input type="email" name="" placeholder="Enter your email here...">
+					</form>
+				</div> -->
+				<h5>QUICK LiNKS</h5>
+				<ul class="footer-list-style footer-list-style2">
+					<li>
+						<a href="search-deliveries.html">Search Deliveries</a>
+					</li>
+					<li>
+						<a href="how-it-works.html">How It Works</a>
+					</li>
+					<li>
+						<a href="help.html">Help</a>
+					</li>
+					<li>
+						<a href="login.html">Log in</a>
+					</li>
+					<li>
+						<a href="terms-and-condition.html">Terms And Condition</a>
+					</li>
+				</ul>
+				<div class="ebay-logo footer-ebay-logo">
+					<img src="images/ebay-guide1.png">
+					<p>compatible</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>		
+
+<footer class="footer-sec2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<p>Copyright © 2021 All Rights Reserved.</p>
+				<ul class="footer-social-icon">
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+	$( document ).ready(function() {
+		$('.banner-slider').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  infinite: false,
+		  dots: true,
+		  autoplaySpeed:3000,
+		  responsive: [
+		    {
+		      breakpoint: 991,
+		      settings: {
+		        arrows: false,
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+		});
+		$('.testimonials-slider').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  autoplay: true,
+		  infinite: false,
+		  dots: true,
+		  autoplaySpeed:1500,
+		  responsive: [
+		    {
+		      breakpoint: 991,
+		      settings: {
+		        arrows: false,
+		        slidesToShow: 2
+		      }
+		    },
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        slidesToShow: 2
+		      }
+		    },
+		    {
+		      breakpoint: 575,
+		      settings: {
+		        arrows: false,
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
+		});
+		$('.dropdown-toggle').click(function(){
+          $(this).closest('.dropdown').find('.dropdown-menu').toggle();
+      });
+		$('.categories-input').click(function(){
+	          $(this).closest('.select-all-categories').find('.categories-select').toggle();
+	    });
+		$('.advanced-search-btn').click(function(){
+		    $(this).closest('.search-deliveries-row').find('.advanced-search-input').toggle();
+		    $(this).closest('.search-deliveries-row').toggleClass('advanced-search-wrapper');
+		});
+	});
+</script>
+</html>

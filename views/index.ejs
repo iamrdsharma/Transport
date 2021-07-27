@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Transport</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css?v=3" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+  </head>
+  <body></body>
+  <header class="header-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-6">
+          <a href="index.html">
+            <img src="images/header-logo.png" />
+          </a>
+        </div>
+        <div class="col-md-9 col-6 header-toggle-menu">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse header-nav"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="search-deliveries.html"
+                    >Search Deliveries</a
+                  >
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="how-it-works.html">How It Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="help.html">Help</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="user-login">Log in</a>
+                </li>
+                <li class="nav-item btn transport-btn">
+                  <a class="nav-link" href="sign-up.html"
+                    >Are you a Transport Company?</a
+                  >
+                </li>
+                <li class="nav-item btn btn-secondary">
+                  <a class="nav-link" href="get-quotes.html">Get Quotes</a>
+                </li>
+
+                <li
+                  class="nav-item btn btn-secondary"
+                  style="margin-left: 10px"
+                >
+                  <a class="nav-link" href="/admin-dash"
+                    >Admin! <% if(adminOnline){ %> <i class="fa fa-user"></i> <%
+                    } %>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner-sec">
+    <div class="container-fluid">
+      <div class="row banner-slider">
+        <div
+          class="banner-slider-image bg-style"
+          style="background-image: url(images/banner-bg.jpg)"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-10 col-12">
+                <div class="banner-heading-area">
+                  <h1>UNBEATABLE TRUCKING AND TRANSPORT SERVICES</h1>
+                  <p>
+                    Starting from loading to unloading and maintaining the
+                    highest standards in terms of safety while in transit, we
+                    take nothing to chance.
+                  </p>
+                  <form
+                    class="banner-form-inner"
+                    action="delivery-form.html"
+                    method="post"
+                  >
+                    <div class="form-group select-picker-style">
+                      <select
+                        id="js-type-rc"
+                        class="js-standard-dropdown"
+                        required="true"
+                        name="selectpicker"
+                      >
+                        <% for(var i=0; i < items.length; i++){ %>
+                        <option
+                          data-img_src="fas fa-<%=items[i].icon %>"
+                          value=""
+                        >
+                          <%=items[i].name %>
+                        </option>
+                        <% } %>
+                      </select>
+                    </div>
+                    <div class="from-grop-box">
+                      <div class="form-group col-md-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Collection Location"
+                          required
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Delivery Location"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="banner-btn">
+                      Receive Quotes In Minutes
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="ebay-logo">
+                  <img src="images/ebay-guide1.png" />
+                  <p>compatible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="banner-slider-image bg-style"
+          style="background-image: url(images/banner-bg1.jpg)"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-10 col-12">
+                <div class="banner-heading-area">
+                  <h1>UNBEATABLE TRUCKING AND TRANSPORT SERVICES</h1>
+                  <p>
+                    Starting from loading to unloading and maintaining the
+                    highest standards in terms of safety while in transit, we
+                    take nothing to chance.
+                  </p>
+                  <form
+                    class="banner-form-inner"
+                    action="delivery-form.html"
+                    method="post"
+                  >
+                    <div class="form-group select-picker-style">
+                      <select
+                        id="js-type-rc"
+                        class="js-standard-dropdown"
+                        required="true"
+                      >
+                        <% for(var i=0; i < items.length; i++){ %>
+                        <option
+                          data-img_src="fas fa-<%=items[i].icon %>"
+                          value=""
+                        >
+                          <%=items[i].name %>
+                        </option>
+                        <% } %>
+                      </select>
+                    </div>
+                    <div class="from-grop-box">
+                      <div class="form-group col-md-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Collection Location"
+                          required
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Delivery Location"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="banner-btn">
+                      Receive Quotes In Minutes
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="ebay-logo">
+                  <img src="images/ebay-guide1.png" />
+                  <p>compatible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="banner-slider-image bg-style"
+          style="background-image: url(images/banner-bg.jpg)"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-10 col-12">
+                <div class="banner-heading-area">
+                  <h1>UNBEATABLE TRUCKING AND TRANSPORT SERVICES</h1>
+                  <p>
+                    Starting from loading to unloading and maintaining the
+                    highest standards in terms of safety while in transit, we
+                    take nothing to chance.
+                  </p>
+                  <form
+                    class="banner-form-inner"
+                    action="delivery-form.html"
+                    method="post"
+                  >
+                    <div class="form-group select-picker-style">
+                      <select
+                        id="js-type-rc"
+                        class="js-standard-dropdown"
+                        required="true"
+                      >
+                        <% for(var i=0; i < items.length; i++){ %>
+                        <option
+                          data-img_src="fas fa-<%=items[i].icon %>"
+                          value=""
+                        >
+                          <%=items[i].name %>
+                        </option>
+                        <% } %>
+                      </select>
+                    </div>
+                    <div class="from-grop-box">
+                      <div class="form-group col-md-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="Collection Location"
+                          required
+                        />
+                      </div>
+                      <div class="form-group col-md-6">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="Delivery Location"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" class="banner-btn">
+                      Receive Quotes In Minutes
+                    </button>
+                  </form>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="ebay-logo">
+                  <img src="images/ebay-guide1.png" />
+                  <p>compatible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <video
+            width="100%"
+            height="300"
+            autoplay="autoplay"
+            loop="loop"
+            controls
+            muted
+          >
+            <source src="images/any-movers-video1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="col-md-4">
+          <div class="video-content-area">
+            <p>
+              Any-Movers.com has carefully selected its transport partners to
+              enable our customers to compare only the best and most trusted
+              companies in the marketplace. Our association with all transport
+              providers is completely neutral; our commitment is to provide you
+              with impartial, competitive quotes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+				<div class="about-first-box">
+					<h3>HELLO THERE AND WELCOME</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu erat, sagittis nec blandit sed, commodo et ante. Praesent viverra diam dui, in varius ante tincidunt sit amet. Integer condimentum lorem enim, congue volutpat lacus egestas nec. Etiam ligula odio, posuere a erat sed.</p>
+					<a href="javascript:void(0);">MORE ABOUT US <i class="fas fa-caret-right"></i></a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+				<div class="about-secound-box">
+					<div class="about-img">
+						<img src="images/about1.jpg">
+					</div>
+					<div class="about-content">
+						<h3>LOREM IPSUM</h3>
+						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu erat, sagittis nec blandit sed, commodo et ante. Praesent viverra diam dui, in varius ante tincidunt sit amet. Integer condimentum lorem</P>
+						<a href="javascript:void(0);">READ MORE <i class="fas fa-caret-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+				<div class="about-secound-box">
+					<div class="about-img">
+						<img src="images/about2.jpg">
+					</div>
+					<div class="about-content">
+						<h3>LOREM IPSUM</h3>
+						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu erat, sagittis nec blandit sed, commodo et ante. Praesent viverra diam dui, in varius ante tincidunt sit amet. Integer condimentum lorem</P>
+						<a href="javascript:void(0);">READ MORE <i class="fas fa-caret-right"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-12">
+				<div class="about-secound-box">
+					<div class="about-img">
+						<img src="images/about3.jpg">
+					</div>
+					<div class="about-content">
+						<h3>LOREM IPSUM</h3>
+						<P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus arcu erat, sagittis nec blandit sed, commodo et ante. Praesent viverra diam dui, in varius ante tincidunt sit amet. Integer condimentum lorem</P>
+						<a href="javascript:void(0);">READ MORE <i class="fas fa-caret-right"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+  <!-- <section class="bg-grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="top-tittle">
+					<h2>HOW IT WORKS</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="how-it-work-box">
+					<span class="work-count">1</span>
+					<h3>Enter information</h3>
+					<p>Request quotes from our 102,334 rated transport providers.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="how-it-work-box">
+					<span class="work-count">2</span>
+					<h3>Compare Free Quotes</h3>
+					<p>Compare prices and read previous customer feedback to pick the right delivery quote for you.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="how-it-work-box">
+					<span class="work-count">3</span>
+					<h3>Choose Quote & Save</h3>
+					<p>Sit back and relax while your item is safely delivered by your chosen transport provider.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-tittle">
+            <h2>Why Use Us?</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 why-use-column text-center">
+          <div class="why-us-info">
+            <i class="far fa-thumbs-up"></i>
+            <p>
+              We're a <span>free</span> to use,<br />
+              no obligation service
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 why-use-column text-center">
+          <div class="why-us-info">
+            <i class="far fa-money-bill-alt"></i>
+            <p>
+              <span>Save</span> money with<br />
+              competitive quotes
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 why-use-column text-center">
+          <div class="why-us-info">
+            <i class="far fa-clock"></i>
+            <p>
+              <span>Save</span> time, companies<br />
+              come to you
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 why-use-column text-center">
+          <div class="why-us-info">
+            <i class="far fa-star"></i>
+            <p>
+              Read the reviews & <br />
+              <span>choose the best rated</span>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 why-use-column text-center">
+          <div class="why-us-info">
+            <i class="far fa-user"></i>
+            <p>
+              we have over 40,000<br />
+              active users
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="bg-grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="top-tittle">
+					<h2>How can we help?</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+				<div class="how-can-box">
+					<a href="javascript:void(0);">
+						<div class="how-can-img">
+							<img src="images/how-can1.png">
+						</div>
+						<p>Prepare for Your Next Move</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+				<div class="how-can-box">
+					<a href="javascript:void(0);">
+						<div class="how-can-img">
+							<img src="images/how-can2.png">
+						</div>
+						<p>Packing Hacks</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+				<div class="how-can-box">
+					<a href="javascript:void(0);">
+						<div class="how-can-img">
+							<img src="images/how-can3.png">
+						</div>
+						<p>Setting Up Home Services</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+				<div class="how-can-box">
+					<a href="javascript:void(0);">
+						<div class="how-can-img">
+							<img src="images/how-can4.png">
+						</div>
+						<p>Moving Day</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+				<div class="how-can-box">
+					<a href="javascript:void(0);">
+						<div class="how-can-img">
+							<img src="images/how-can5.png">
+						</div>
+						<p>Taking Care of your Pets</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+				<div class="how-can-box">
+					<a href="javascript:void(0);">
+						<div class="how-can-img">
+							<img src="images/how-can6.png">
+						</div>
+						<p>Selling and Donating Your Stuff</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+				<div class="how-can-box">
+					<a href="javascript:void(0);">
+						<div class="how-can-img">
+							<img src="images/how-can7.png">
+						</div>
+						<p>Planning Your Housewarming Party</p>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-12">
+				<div class="how-can-box">
+					<a href="javascript:void(0);">
+						<div class="how-can-img">
+							<img src="images/how-can8.png">
+						</div>
+						<p>Settling In</p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+  <section class="bg-grey">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-tittle">
+            <h2>OUR SERVICES</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <a href="furniture-delivery.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Furniture Delivery</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-couch"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="javascript:void(0)">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>eBay Couriers</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fab fa-ebay"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="man-&-van.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Man And Van</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-truck"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="javascript:void(0)">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Boat Transport</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-ship"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="motorcycle-transport.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Motorcycle Transport</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-motorcycle"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="courier-services.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Courier Services</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-envelope-open-text"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="javascript:void(0)">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Pet Transport</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-cat"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="car-transport.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Car Transport</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-car"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="removal-companies.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Removal Companies</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fab fa-dropbox"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="large-Item-delivery.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Large Item Delivery</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-gopuram"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="international-shipping.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>International Shipping</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-dolly-flatbed"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="haulage-services.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Haulage</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-archive"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="javascript:void(0)">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Removals</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-trash"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="fragile-goods.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>Fragile Goods Transport</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-box"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <a href="european-transport.html">
+            <div class="our-services-box">
+              <div class="service-content">
+                <h4>European Transport</h4>
+                <p>Lorem ipsum dolor sit amet</p>
+              </div>
+              <div class="service-icon">
+                <i class="fas fa-globe-europe"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="bg-blue-dark recent-news-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="top-tittle">
+					<h2>RECENT News</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6 col-12">
+				<div class="recent-news-box">
+					<a href="javascript:void(0);">
+						<div class="recent-news-box">
+							<img src="images/recent-news1.jpg">
+						</div>
+						<div class="recent-news-content">
+							<h3>Why choose our warehousing service?</h3>
+							<p>By Jaka Smid</p>
+						</div>
+						<div class="news-date">
+							<p>Augest <span>6</span></p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-12">
+				<div class="recent-news-box">
+					<a href="javascript:void(0);">
+						<div class="recent-news-box">
+							<img src="images/recent-news2.jpg">
+						</div>
+						<div class="recent-news-content">
+							<h3>Why choose our warehousing service?</h3>
+							<p>By Jaka Smid</p>
+						</div>
+						<div class="news-date">
+							<p>Augest <span>6</span></p>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-12">
+				<div class="recent-news-box">
+					<a href="javascript:void(0);">
+						<div class="recent-news-box">
+							<img src="images/recent-news4.jpg">
+						</div>
+						<div class="recent-news-content">
+							<h3>Why choose our warehousing service?</h3>
+							<p>By Jaka Smid</p>
+						</div>
+						<div class="news-date">
+							<p>Augest <span>6</span></p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section> -->
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="top-tittle">
+            <h2>Recent Testimonials</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row testimonials-slider">
+        <% for(let i=0; i < testimonials.length; i++){ %>
+        <div class="col-md-4">
+          <div class="testimonials-box">
+            <div class="testimonial-item-thumb">
+              <img src="images/testimonial1.jpg" />
+            </div>
+            <div class="testimonial-text">
+              <p>" <%=testimonials[i].review %> "</p>
+              <h4><%=testimonials[i].name %></h4>
+            </div>
+
+            <div class="testimonial-item-rating">
+              <% for(let j=0; j < testimonials[i].stars; j++){ %>
+              <i class="fa fa-star"></i>
+              <% } %>
+            </div>
+            <div class="Quotes-wrap">
+              <i class="fas fa-quote-right"></i>
+            </div>
+          </div>
+        </div>
+        <% } %>
+      </div>
+      <a href="/createReview"
+        ><button type="submit" class="banner-btn">Submit Yours!</button></a
+      >
+    </div>
+  </section>
+
+  <footer class="footer-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <h5>CONTACTS US</h5>
+          <div class="footer-company-details">
+            <ul>
+              <li>
+                <div class="contact-info-inner">
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                </div>
+                <p>Zhongxing Road,kenli Distrect, Dongying,shandong</p>
+              </li>
+              <li>
+                <div class="contact-info-inner">
+                  <i class="fas fa-phone-alt" aria-hidden="true"></i>
+                </div>
+                <p>999-999-999</p>
+              </li>
+              <li>
+                <div class="contact-info-inner">
+                  <i class="fas fa-envelope" aria-hidden="true"></i>
+                </div>
+                <p>example@gamil.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- <div class="col-lg-2 col-md-6">
+				<h5>QUICK LINKS</h5>
+				<ul class="footer-list-style">
+					<li><a href="javascript:void(0);">Search Deliveries</a></li>
+					<li><a href="javascript:void(0);">How It Works</a></li>
+					<li><a href="javascript:void(0);">Help</a></li>
+					<li><a href="javascript:void(0);">Log in</a></li>
+				</ul>
+			</div> -->
+        <div class="col-lg-5 col-md-6">
+          <h5>OUR SERVICES</h5>
+          <ul class="footer-list-style">
+            <li><a href="furniture-delivery.html">Furniture Delivery</a></li>
+            <li><a href="javascript:void(0);">eBay Couriers</a></li>
+            <li><a href="man-&-van.html">Man And Van</a></li>
+            <li><a href="javascript:void(0);">Boat Transport</a></li>
+            <li>
+              <a href="motorcycle-transport.html">Motorcycle Transport</a>
+            </li>
+            <li><a href="courier-services.html">Courier Services</a></li>
+            <li><a href="javascript:void(0);">Pet Transport</a></li>
+            <li><a href="car-transport.html">Car Transport</a></li>
+            <li><a href="removal-companies.html">Removal Companies</a></li>
+            <li><a href="large-Item-delivery.html">Large Item Delivery</a></li>
+            <li>
+              <a href="international-shipping.html">International Shipping</a>
+            </li>
+            <li><a href="haulage-services.html">Haulage</a></li>
+            <li><a href="javascript:void(0);">Removals</a></li>
+            <li><a href="fragile-goods.html">Fragile Goods Transport</a></li>
+            <li><a href="european-transport.html">European Transport</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <!-- <div class="our-location-box">
+					<h5>NEWSLETTER SUBSCRIBE</h5>
+					<p>Vivamus consequat, felis at aliquam elementum, massa sem dignissim elit, sit amet cursus massa tortor eget ante.</p>
+					<form>
+						<input type="email" name="" placeholder="Enter your email here...">
+					</form>
+				</div> -->
+          <h5>QUICK LiNKS</h5>
+          <ul class="footer-list-style footer-list-style2">
+            <li>
+              <a href="search-deliveries.html">Search Deliveries</a>
+            </li>
+            <li>
+              <a href="how-it-works.html">How It Works</a>
+            </li>
+            <li>
+              <a href="help.html">Help</a>
+            </li>
+            <li>
+              <a href="login.html">Log in</a>
+            </li>
+            <li>
+              <a href="terms-and-condition.html">Terms And Condition</a>
+            </li>
+          </ul>
+          <div class="ebay-logo footer-ebay-logo">
+            <img src="images/ebay-guide1.png" />
+            <p>compatible</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-sec2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <p>Copyright © 2021 All Rights Reserved.</p>
+          <ul class="footer-social-icon">
+            <li>
+              <a href="javascript:void(0);">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <i class="fab fa-pinterest-p"></i>
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <i class="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Latest compiled and minified JavaScript -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.css"
+  />
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      function custom_template(obj) {
+        var data = $(obj.element).data();
+        var text = $(obj.element).text();
+        if (data && data["img_src"]) {
+          img_src = data["img_src"];
+          template = $(
+            '<div><i class="' + img_src + '"></i>' + text + "</p></div>"
+          );
+          return template;
+        }
+      }
+      var options = {
+        templateSelection: custom_template,
+        templateResult: custom_template,
+        minimumResultsForSearch: -1,
+      };
+      $(".select-picker-style").each(function () {
+        $(this).find("select").select2(options);
+      });
+      $(".select2-container--default .select2-selection--single").css({
+        height: "220px",
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $(".banner-slider").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        infinite: false,
+        dots: true,
+        autoplaySpeed: 3000,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+      $(".testimonials-slider").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        infinite: false,
+        dots: true,
+        autoplaySpeed: 1500,
+        responsive: [
+          {
+            breakpoint: 991,
+            settings: {
+              arrows: false,
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              slidesToShow: 2,
+            },
+          },
+          {
+            breakpoint: 575,
+            settings: {
+              arrows: false,
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+      $(".dropdown-toggle").click(function () {
+        $(this).closest(".dropdown").find(".dropdown-menu").toggle();
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transport</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css?v=3">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+</head>
+<body>
+
+<header class="header-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-md-6 col-6 dashboard-menu">
+				<a href="index.html">
+					<img src="images/header-logo.png">
+				</a>
+				<ul class="navbar-nav logo-wrap-menu">
+					<li class="nav-item">
+						<a href="javascript:void(0);">Get Quotes</a>
+					</li>
+					<li class="nav-item">
+						<a href="search-deliveries.html">Search Deliveries</a>
+					</li>
+					<li class="nav-item">
+						<a href="how-it-works.html">How It Works</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-md-4 col-6 header-toggle-menu">
+				<nav class="navbar navbar-expand-lg navbar-light">
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+
+				  <div class="collapse navbar-collapse header-nav" id="navbarSupportedContent">
+				    <ul class="navbar-nav dashboard-mobile-menu">
+				    	<li class="nav-item">
+							<a class="nav-link" href="javascript:void(0);">Get Quotes</a>
+						</li>
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">Search Deliveries</a>
+				      </li>
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">How It Works</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Help</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="messages.html"><i class="fas fa-envelope"></i></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="outbid-Auctions.html"><i class="fas fa-gavel"></i></a>
+				      </li>
+				       <li class="nav-item btn btn-secondary">
+				        <a class="nav-link" href="vendor-dashboard.html"><i class="fas fa-tachometer-alt"></i> My Activity</a>
+				      </li>
+				    </ul>
+				    <ul class="navbar-nav dashboard-dekstop-menu">
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">Help</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="messages.html"><i class="fas fa-envelope"></i></a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="outbid-Auctions.html"><i class="fas fa-gavel"></i></a>
+				      </li>
+				       <li class="nav-item btn btn-secondary">
+				        <a class="nav-link" href="vendor-dashboard.html"><i class="fas fa-tachometer-alt"></i> My Activity</a>
+				      </li>
+				    </ul>
+				  </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section class="dashboard-menu-top">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="dashboard-top-heading">
+					<p><strong>My Activity:</strong> fastremove 143</p>
+				</div>
+			</div>
+			<div class="col-md-6 dashboard-tab-wrapper">
+				<ul class="nav nav-tabs">
+					<li>
+						<a href="vendor-dashboard.html">
+							<i class="fas fa-exchange-alt"></i>
+							<span class="myActivity-nav-link">My Activity </span>
+						</a>
+					</li>
+					<li>
+						<a href="messages.html">
+							<i class="fa fa-envelope"></i>
+							<span class="myActivity-nav-link">Messages  </span>
+							<!-- <div class="msg-counter-number">1</div> -->
+						</a>
+					</li>
+					<li class="active">
+						<a href="account.html">
+							<i class="fa fa-user"></i>
+							<span class="myActivity-nav-link">Account</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="right-side-column">
+					<div class="right-top-heading">
+						<h3>Messages</h3>
+					</div>
+					<ul class="left-nav-item-list">
+						<li class="left-nav-item">
+							<a href="account.html" class="left-nav-a left-nav-first">
+								<i class="fas fa-file-alt"></i>
+								<span class="ms-left-txt">Account</span>
+							</a>
+						</li>
+						<li class="left-nav-item active">
+							<a href="sales-report.html.html" class="left-nav-a left-nav-first">
+								<i class="fas fa-bolt"></i>
+								<span class="ms-left-nav-txt">Sales Report</span>
+							</a>
+						</li>
+						<li class="left-nav-item">
+							<a href="profile.html" class="left-nav-a left-nav-first">
+								<i class="fas fa-user"></i>
+								<span class="ms-left-txt">Profile</span>
+							</a>
+						</li>
+						<li class="left-nav-item ">
+							<a href="index.html" class="left-nav-a left-nav-first">
+								<i class="fas fa-sign-out-alt"></i>
+								<span class="ms-left-txt">Logout</span>
+							</a>
+						</li>	
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="left-side-col-wraper">
+					<div class="left-side-pannel-head">
+						<div class="panel-heading-div saved-search-head">
+							<i class="fas fa-bolt"></i>
+							<span class="panel-strong"><strong>Sales Report</strong></span>
+						</div>
+					</div>
+					<div class="date-select-box">
+						<form>
+							<div class="form-group">
+								<select id="AcceptedQuotesOrder" class="form-control listing-action">
+									<option value="01">January</option>
+									<option value="02">February</option>
+									<option value="03">March</option>
+									<option value="04">April</option>
+									<option value="05" selected="selected">May</option>
+									<option value="06">June</option>
+									<option value="07">July</option>
+									<option value="08">August</option>
+									<option value="09">September</option>
+									<option value="10">October</option>
+									<option value="11">November</option>
+									<option value="12">December</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<select id="AcceptedQuotesOrder" class="form-control listing-action">
+									<option value="2007">2007</option>
+									<option value="2008">2008</option>
+									<option value="2009">2009</option>
+									<option value="2010">2010</option>
+									<option value="2011">2011</option>
+									<option value="2012">2012</option>
+									<option value="2013">2013</option>
+									<option value="2014">2014</option>
+									<option value="2015">2015</option>
+									<option value="2016">2016</option>
+									<option value="2017">2017</option>
+									<option value="2018">2018</option>
+									<option value="2019">2019</option>
+									<option value="2020">2020</option>
+								</select>
+							</div>
+							<button type="submit" class="btn btn-secondary">GO</button>
+						</form>
+					</div>
+					<div class="table-content-box">
+						<table class="table">
+							<thead>
+								<tr>
+									<th>Reference</th>
+									<th>User</th>
+									<th>Date</th>
+									<th>Amount</th>
+									<th>Deposit&nbsp;Fee</th>
+									<th>Net</th>
+									<th>Balance</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+								<tr>
+									<td>
+										<a href="javascript:void(0);">Two Chairs, 4 Dinning Chairs And A Table</a>
+									</td>
+									<td>
+										<a href="javascript:void(0);">phaa6</a>
+									</td>
+									<td>05/10/2021</td>
+									<td>£75.00</td>
+									<td>£8.33</td>
+									<td>£65.00</td>
+									<td>£65.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer-sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<h5>CONTACTS US</h5>
+				<div class="footer-company-details">
+					<ul>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+							</div>
+							<p>Zhongxing Road,kenli Distrect, Dongying,shandong</p></li>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-phone-alt" aria-hidden="true"></i>
+							</div>
+							<p>999-999-999</p></li>
+						<li>
+							<div class="contact-info-inner">
+								<i class="fas fa-envelope" aria-hidden="true"></i>
+							</div>
+							<p>example@gamil.com</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- <div class="col-lg-2 col-md-6">
+				<h5>QUICK LINKS</h5>
+				<ul class="footer-list-style">
+					<li><a href="javascript:void(0);">Search Deliveries</a></li>
+					<li><a href="javascript:void(0);">How It Works</a></li>
+					<li><a href="javascript:void(0);">Help</a></li>
+					<li><a href="javascript:void(0);">Log in</a></li>
+				</ul>
+			</div> -->
+			<div class="col-lg-5 col-md-6">
+				<h5>OUR SERVICES</h5>
+				<ul class="footer-list-style">
+					<li><a href="furniture-delivery.html">Furniture Delivery</a></li>
+					<li><a href="javascript:void(0);">eBay Couriers</a></li>
+					<li><a href="man-&-van.html">Man And Van</a></li>
+					<li><a href="javascript:void(0);">Boat Transport</a></li>
+					<li><a href="motorcycle-transport.html">Motorcycle Transport</a></li>
+					<li><a href="courier-services.html">Courier Services</a></li>
+					<li><a href="javascript:void(0);">Pet Transport</a></li>
+					<li><a href="car-transport.html">Car Transport</a></li>
+					<li><a href="removal-companies.html">Removal Companies</a></li>
+					<li><a href="large-Item-delivery.html">Large Item Delivery</a></li>
+					<li><a href="international-shipping.html">International Shipping</a></li>
+					<li><a href="haulage-services.html">Haulage</a></li>
+					<li><a href="javascript:void(0);">Removals</a></li>
+					<li><a href="fragile-goods.html">Fragile Goods Transport</a></li>
+					<li><a href="european-transport.html">European Transport</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<!-- <div class="our-location-box">
+					<h5>NEWSLETTER SUBSCRIBE</h5>
+					<p>Vivamus consequat, felis at aliquam elementum, massa sem dignissim elit, sit amet cursus massa tortor eget ante.</p>
+					<form>
+						<input type="email" name="" placeholder="Enter your email here...">
+					</form>
+				</div> -->
+				<h5>QUICK LiNKS</h5>
+				<ul class="footer-list-style footer-list-style2">
+					<li>
+						<a href="search-deliveries.html">Search Deliveries</a>
+					</li>
+					<li>
+						<a href="how-it-works.html">How It Works</a>
+					</li>
+					<li>
+						<a href="help.html">Help</a>
+					</li>
+					<li>
+						<a href="login.html">Log in</a>
+					</li>
+					<li>
+						<a href="terms-and-condition.html">Terms And Condition</a>
+					</li>
+				</ul>
+				<div class="ebay-logo footer-ebay-logo">
+					<img src="images/ebay-guide1.png">
+					<p>compatible</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<footer class="footer-sec2">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<p>Copyright © 2021 All Rights Reserved.</p>
+				<ul class="footer-social-icon">
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-pinterest-p"></i>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0);">
+								<i class="fab fa-youtube"></i>
+							</a>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<script>
+	$(document).ready(function(){
+		$('.input-cheackbox').click(function(){
+          $(this).closest('.input-cheack-area').find('.form-inner').toggle();
+      });
+	});
+</script>
+
+</html>
